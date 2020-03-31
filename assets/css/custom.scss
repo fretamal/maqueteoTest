@@ -1,0 +1,286 @@
+$primary: #00D2B5;
+$font: #949494;
+$bg: #F6F6F6;
+
+// --- Estilos Generales ---
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Helvetica Neue",Roboto,Arial;
+}
+.text-primary{
+    color: $primary !important;
+}
+.text-black{
+    color: #000;
+}
+.gray-bg{
+    background-color: $bg;
+}
+.btn-green{
+    background-color: $primary;
+    border-radius: 20px;
+    border: 0px;
+    color: #fff;
+    box-shadow: 0px 2px 15px 0px rgba(0,210,181,0.5);
+    width: auto;
+    &:hover{
+        background-color: #06B59F;
+        color: #fff;
+    }
+}
+h1{
+    font-size: 48px;
+    font-weight: bolder;
+    color: #000;
+}
+
+h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bolder;
+    color: #000;
+    padding-bottom: 40px
+}
+h3{
+    font-size: 28px;
+}
+
+.navbar{
+    -webkit-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.1);
+    .nav-item{
+        color: #060606 !important;
+        font-size: 13px;
+        padding: 5px 15px !important;
+    }
+}
+.navbar-nav .nav-link.active{
+    color: #00D2B5 !important;
+}
+.logoTextMobile{
+    color: #000;
+    font-size: 36px;
+}
+
+
+// --- Estilos por seccion ---
+
+
+.logoWrapper{
+    color:#6C757E;
+    padding-bottom: 70px;
+    .container-fluid{
+        overflow: hidden;
+    }
+    .logoText{
+        color: #000;
+        font-size: 30px;
+        padding-top: 6px;
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 280px;
+    }
+    p{
+        font-size: 13px;
+        line-height: 22px;
+    }
+    img{
+        position: relative;
+        right: -10%;
+    }
+}
+.featuresWrapper{
+    background-color: $bg;
+    padding: 50px 0px;
+    .card{
+        border: 0px !important;
+    }
+    .card-body{
+        padding: 25px !important;
+    }
+    h5{
+        font-size: 14px;
+        color: #000;
+    }
+    p{
+        font-size: 14px;
+        color: $font;
+    }
+    a{
+        font-size: 14px;
+        color: $primary;
+    }
+    .iconWrapper{
+        background-color: $primary;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0px 2px 15px 0px rgba(0,210,181,0.5);
+        color:#fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+}
+.prototypesWrapper{
+    padding: 100px 0px;
+    h2{
+        text-align: left;
+    }
+    p{
+        color: $font;
+        font-size: 15px;
+    }
+    .card{
+        border: 1px solid #F5F5F5;
+        -webkit-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.1);
+        box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.1);
+        img{
+            border-radius: 50%;
+        }
+    }
+    .iconCheck{
+        color: #8DC44D;
+        font-size: 21px;
+        margin-right: 18px;
+        font-weight: bold;
+    }
+}
+.aboutUsWrapper{
+    padding: 50px 0px;
+    background-color: $bg;
+    p{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: $font;
+        font-size: 14px;
+    }
+    img{
+        -webkit-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.2);
+        border-radius: 3px;
+    }
+}
+.testimonialsWrapper{
+    padding: 50px 0px;
+    .carousel-indicators {
+        position: relative !important;
+    }
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: #DEE2E6;
+    }
+    .carousel-indicators .active {
+        background-color: $primary;
+        opacity: 1 !important;
+    }
+    .testimonie{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.2);
+    }
+    .comment{
+        font-size: 16px;
+        color: $font;
+        font-style: italic;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .author{
+        font-size: 12px;
+        color: #000;
+
+    }
+}
+.contactWrapper{
+    background-color: $bg;
+    padding: 50px 0px;
+
+    .contactForm{
+        padding: 40px;
+        background-color: #fff;
+    }
+    h3{
+        font-size: 22px;
+        margin-bottom: 40px;
+    }
+    .form-control {
+        border-radius: 0px !important;
+    }
+}
+.footerWrapper{
+    border-top: 1px solid #EDF0F5;
+    padding-top: 50px;
+    p{
+        text-align: center;
+        color: $font;
+        font-size: 14px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+}
+
+
+// --- Estilos para mobile ---
+
+
+@media screen and (max-width: 991px){
+    .navbar{
+        -webkit-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.0);
+        box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.0);
+    }
+    .logoWrapper{
+        h1{
+            margin-top: 30px;
+            font-size: 40px;
+        }
+        .title{    
+            width: 95%;
+        }
+        p{
+            font-size: 22px;
+            line-height: 30px;
+        }
+        img{
+            position: relative;
+            right: 0%;
+        }
+    }
+    .navbar-light .navbar-toggler {
+        color: rgba(0,0,0,1);
+        border-width: 0px !important;
+    }
+    .navbar-toggler {
+        padding: 5px;
+    }  
+    .toggleIcon{
+        font-size: 36px;
+    }
+    .navbar .nav-item {
+        text-align: right;
+    }
+}
